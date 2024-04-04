@@ -1,6 +1,14 @@
 name T2
-comment This experiment tests different algorithms when running the CPU-Intensive and Mixed-Load workload in parallel
-run combinedload algorithm FCFS key "FCFS"
-run combinedload algorithm SJF key "SJF"
-run combinedload algorithm RR 1 key "RR 1"
-run combinedload algorithm SJFA 0.5 key "SJFA 0.5"
+comment This experiment tests different algorithms when running the combined workloads in parallel
+run run_combinedload1 algorithm FCFS key "FCFS"
+run run_combinedload1 algorithm SJF key "SJF"
+run run_combinedload1 algorithm RR 1 key "RR 1"
+run run_combinedload1 algorithm SJFA 0.5 key "SJFA 0.5"
+run run_combinedload2 algorithm FCFS key "FCFS"
+run run_combinedload2 algorithm SJF key "SJF"
+run run_combinedload2 algorithm RR 1 key "RR 1"
+run run_combinedload2 algorithm SJFA 0.5 key "SJFA 0.5"
+run run_combinedload3 algorithm FCFS key "FCFS"
+run run_combinedload3 algorithm SJF key "SJF"
+run run_combinedload3 algorithm RR 1 key "RR 1"
+run run_combinedload3 algorithm SJFA 0.5 key "SJFA 0.5"

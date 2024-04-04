@@ -1,13 +1,13 @@
-name combinedload
-comment Simulating CPU-Intensive and Mixed-Load workloads in parallel
+name run_combinedload2
+comment Simulating Interactive and Mixed-Load workloads in parallel
 algorithm FCFS
 seed 5000
 numprocs 5
 firstarrival 0.0
 interarrival constant 0.0
-duration constant 40.0
-cpuburst constant 10.0
-ioburst exponential 1.5
+duration constant 5.0
+cpuburst constant 0.5
+ioburst uniform 1.0 5.0
 basepriority 1.0
 
 numprocs 5

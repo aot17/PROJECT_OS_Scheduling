@@ -4,7 +4,7 @@ imagename gifim
 user Local User
 quiet
 portable true
-run cpuintensiveT4
-run interactiveT4
-run mixedloadT4
-exp T4
+run run_cpuintensive
+run run_interactive
+run run_mixedload
+exp T1
