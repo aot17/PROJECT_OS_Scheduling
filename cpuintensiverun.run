@@ -1,0 +1,11 @@
+name cpuintensiverun
+comment Simulating high performance applications with long CPU bursts and short IO waits
+algorithm FCFS
+seed 5000
+numprocs 5
+firstarrival 0.0
+interarrival constant 0.0
+duration constant 40.0
+cpuburst constant 10.0
+ioburst exponential 1.5
+basepriority 1.0

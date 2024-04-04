@@ -1,0 +1,156 @@
+<HEAD>
+<TITLE>Process Scheduling for Local User generated Tue Apr 02 23:08:07 CEST 2024</TITLE>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF><H3>Process Scheduling for Local User generated Tue Apr 02 23:08:07 CEST 2024</H3>
+
+<H6>Process Scheduling Simulator
+version 1.100L288 by S. Robbins 
+supported by NSF grants 
+DUE-9750953 and DUE-9752165.
+<br>See <a href=http://vip.cs.utsa.edu/nsf>http://vip.cs.utsa.edu/nsf</a> for simulator information.<br><br>
+Java version 11.0.22 OS Linux version 6.5.0-26-generic 27617129733
+<br></H6>
+
+<hr>
+
+<b>Configuration File:</b><br>
+logdir .<br>
+logfn logfile.html<br>
+imagename gifim<br>
+user Local User<br>
+quiet<br>
+portable true<br>
+run T2run<br>
+exp T2exp<br>
+
+<hr>
+
+<b>Number of Run Files: 1</b><br>
+--------------------<br>
+name T2run<br>
+comment Simulating CPU-Intensive and Mixed-Load workloads in parallel<br>
+algorithm FCFS<br>
+seed 5000<br>
+numprocs 5<br>
+firstarrival 0.0<br>
+interarrival constant 0.0<br>
+duration constant 40.0<br>
+cpuburst constant 10.0<br>
+ioburst exponential 1.5<br>
+basepriority 1.0<br>
+<br>
+numprocs 5<br>
+firstarrival 0.0<br>
+interarrival constant 0.0<br>
+duration constant 20.0<br>
+cpuburst uniform 1.0 5.0<br>
+ioburst uniform 1.0 5.0<br>
+basepriority 1.0<br>
+
+<hr>
+
+<b>Number of Experiment Files: 1</b><br>
+--------------------<br>
+name T2exp<br>
+comment This experiment tests different algorithms when running the CPU-Intensive and Mixed-Load workload in parallel<br>
+run T2run algorithm FCFS key "FCFS"<br>
+run T2run algorithm SJF key "SJF"<br>
+run T2run algorithm RR 1 key "RR 1"<br>
+run T2run algorithm SJFA 0.5 key "SJFA 0.5"<br>
+run T2run algorithm FCFS key "FCFS"<br>
+run T2run algorithm SJF key "SJF"<br>
+run T2run algorithm RR 1 key "RR 1"<br>
+run T2run algorithm SJFA 0.5 key "SJFA 0.5"<br>
+
+<hr>
+
+<center><TABLE Border=1>
+<TR>
+<TD Align=center COLSPAN=5>Experimental Run Information for 1 Run
+</TR>
+<TR><TABLE Border=2>
+<TR COLSPAN=8>
+<TD Align=center COLSPAN=7>
+T2run: &nbsp&nbsp Simulating CPU-Intensive and Mixed-Load workloads in parallel &nbsp&nbsp 
+Seed: 0&nbsp&nbsp Algorithm: FCFS</TD></TR>
+<TR><TD Align=center>Group</TD>
+<TD Align=center>Processes</TD>
+<TD Align=center>First Arrival</TD>
+<TD Align=center>Interarrival</TD>
+<TD Align=center>Duration</TD>
+<TD Align=center>CPU Burst</TD>
+<TD Align=center>I/O Burst</TD>
+</TR>
+<TR><TD Align=center>1</TD><TD ALign=right>5</TD><TD Align=right>0.0</TD><TD>constant        0.00</TD><TD>constant       40.00</TD><TD>constant       10.00</TD><TD>exponential     1.50</TD></TR>
+<TR><TD Align=center>2</TD><TD ALign=right>5</TD><TD Align=right>0.0</TD><TD>constant        0.00</TD><TD>constant       20.00</TD><TD>uniform         1.00 5.00</TD><TD>uniform         1.00 5.00</TD></TR>
+</TABLE></TR>
+</TR></TABLE></center>
+<p><hr><p>
+
+<Center><TABLE Border=1>
+<TR>
+<TD Align=center COLSPAN=4>Experimental Runs For 1 Experiment
+</TR><TR>
+<TD Align=left>Experiment</TD>
+<TD ALign=center>Commentary</TD>
+<TD ALign=center>Run</TD>
+<TD ALign=center>Modifications</TD>
+</TR>
+<TR><TD Align=center>T2exp</td>
+<TD Align=left>This experiment tests different algorithms when running the CPU-Intensive and Mixed-Load workload in parallel</TD>
+<TD Align=left>T2run_1</TD>
+<TD Align=left>algorithm FCFS</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key FCFS</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_2</TD>
+<TD Align=left>algorithm SJF</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key SJF</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_3</TD>
+<TD Align=left>algorithm RR 1</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key RR 1</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_4</TD>
+<TD Align=left>algorithm SJFA 0.5</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key SJFA 0.5</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_5</TD>
+<TD Align=left>algorithm FCFS</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key FCFS</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_6</TD>
+<TD Align=left>algorithm SJF</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key SJF</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_7</TD>
+<TD Align=left>algorithm RR 1</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key RR 1</TD>
+</TR>
+<TR><TD> </td>
+<TD></TD>
+<TD Align=left>T2run_8</TD>
+<TD Align=left>algorithm SJFA 0.5</TD>
+</TR>
+<TR><TD></TD><TD></TD><TD></TD><TD Align=left>key SJFA 0.5</TD>
+</TR>
+</TR></TABLE></center>
+
