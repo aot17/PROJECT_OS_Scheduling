@@ -1,0 +1,14 @@
+name T4
+comment This experiment tests the scheduling algorithms using three different workloads: CPU-Intensive, Interactive and Mixed-Load with numproc 500 and various interarrival distributions
+run cpuintensiveT4 algorithm FCFS key "FCFS"
+run cpuintensiveT4 algorithm SJF key "SJF"
+run cpuintensiveT4 algorithm RR 1 key "RR 1"
+run cpuintensiveT4 algorithm SJFA 0.5 key "SJFA 0.5"
+run interactiveT4 algorithm FCFS key "FCFS"
+run interactiveT4 algorithm SJF key "SJF"
+run interactiveT4 algorithm RR 1 key "RR 1"
+run interactiveT4 algorithm SJFA 0.5 key "SJFA 0.5"
+run mixedloadT4 algorithm FCFS key "FCFS"
+run mixedloadT4 algorithm SJF key "SJF"
+run mixedloadT4 algorithm RR 1 key "RR 1"
+run mixedloadT4 algorithm SJFA 0.5 key "SJFA 0.5"

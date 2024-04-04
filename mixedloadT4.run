@@ -1,0 +1,12 @@
+name mixedloadT4
+comment Representing a mixed load of neither IO nor CPU bursts predominating
+algorithm FCFS
+seed 5000
+numprocs 500
+firstarrival 0.0
+interarrival uniform 20.0 100.0
+duration constant 20.0
+cpuburst uniform 1.0 5.0
+ioburst uniform 1.0 5.0
+basepriority 1.0
+

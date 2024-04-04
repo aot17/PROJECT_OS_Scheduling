@@ -1,4 +1,4 @@
-name T2run
+name combinedload
 comment Simulating CPU-Intensive and Mixed-Load workloads in parallel
 algorithm FCFS
 seed 5000

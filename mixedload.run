@@ -1,4 +1,4 @@
-name mixedloadrun
+name mixedload
 comment Representing a mixed load of neither IO nor CPU bursts predominating
 algorithm FCFS
 seed 5000

@@ -1,4 +1,4 @@
-name cpuintensiverun
+name cpuintensive
 comment Simulating high performance applications with long CPU bursts and short IO waits
 algorithm FCFS
 seed 5000
