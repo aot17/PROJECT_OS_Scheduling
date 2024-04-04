@@ -7,4 +7,10 @@ portable true
 run run_cpuintensive
 run run_interactive
 run run_mixedload
+run run_combinedload1
+run run_combinedload2
+run run_combinedload3
 exp T1
+exp T2
+exp T3
+exp T4
